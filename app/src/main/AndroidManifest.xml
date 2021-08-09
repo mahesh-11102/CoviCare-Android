@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covicare">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoviCare">
+
+        <activity android:name=".loadingoxygen"></activity>
+        <activity android:name=".loading2" >
+
+        </activity>
+        <activity android:name=".loading_after_main" />
+        <activity android:name=".loading" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".oxygen" >
+
+        </activity>
+        <activity android:name=".donor_main" />
+        <activity android:name=".mainpage">
+
+        </activity>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".mainpage">
+
+    <LinearLayout
+        android:layout_width="424dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:rotationX="20"
+                app:cardBackgroundColor="#d3fffd"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/confirmedCases"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:rotationX="20"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="100dp">
+
+                <TextView
+                    android:id="@+id/recoveredText"
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="10"
+                    android:shadowDy="30"
+                    android:shadowRadius="0"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:rotationX="20"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/activeText"
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="10"
+                    android:shadowDy="30"
+                    android:shadowRadius="0"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:rotationX="20"
+                app:cardBackgroundColor="#d3fffd"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/deathText"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/main_blood_text"
+                android:textColor="#d3fffd"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="@string/main_blood_text" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_receiver_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="244dp"
+        android:layout_height="304dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/covid_doc_fight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
